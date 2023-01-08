@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToolbarLightDarkSwitch renders correctly 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe cEJzEP"
+  >
+    <button
+      class="sc-gswNZR eGPipM"
+    >
+      <svg>
+        sunflower-svgrepo-com.svg
+      </svg>
+      <svg>
+        moon-svgrepo-com.svg
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`ToolbarLightDarkSwitch renders correctly and matches snapshot 1`] = `
+<div>
+  <div
+    class="sc-bcXHqe cEJzEP"
+    data-testid="toolbar-light-dark-switch-container"
+  >
+    <button
+      class="sc-gswNZR eGPipM"
+      data-testid="toolbar-light-dark-switch-button"
+    >
+      <svg>
+        sunflower-svgrepo-com.svg
+      </svg>
+      <svg>
+        moon-svgrepo-com.svg
+      </svg>
+    </button>
+  </div>
+</div>
+`;
