@@ -62,6 +62,7 @@ module.exports = {
         'unicorn/prefer-node-protocol': 'off',
         'unicorn/explicit-length-check': 'off',
         'consistent-return': 'off',
+        'spaced-comment': 'off',
         'no-param-reassign': ['error', { props: false }],
         'array-callback-return': 'off',
         'no-extra-boolean-cast': 'off',
@@ -80,6 +81,8 @@ module.exports = {
         'jest/no-mocks-import': 'off',
         '@typescript-eslint/unbound-method': 'off',
         'react/jsx-props-no-spreading': 'off',
+        'react/jsx-no-useless-fragment': 'off',
+        'react/button-has-type': 'off',
         'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
         'unicorn/no-array-reduce': 'off',
         '@typescript-eslint/no-misused-promises': [
@@ -94,7 +97,7 @@ module.exports = {
             caughtErrorsIgnorePattern: '^_',
           },
         ],
-        "react/require-default-props": "off"
+        'react/require-default-props': 'off',
       },
     },
     {

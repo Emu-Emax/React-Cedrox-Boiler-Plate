@@ -8,7 +8,7 @@ import LayoutBase from 'layouts/LayoutBase'
 
 // Constants
 import { ROUTE_HOME } from 'constants/routes'
-import ViewHome from 'views/home/ViewHome'
+import ViewHome from 'views/ViewHome'
 
 const MAPPED_ROUTES = [
   {
@@ -24,6 +24,7 @@ const RouterApp = () => (
       {MAPPED_ROUTES.map(({ path, component: Component, layout: Layout }) => (
         <Route
           path={path}
+          key={path}
           element={
             <Layout>
               <Component />

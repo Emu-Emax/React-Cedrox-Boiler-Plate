@@ -17,6 +17,13 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
+  // TODO: this disables TS prompt during development
+  // NOTE:
+  iframe
+    {
+      display: none;
+    }
+
   body {
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
