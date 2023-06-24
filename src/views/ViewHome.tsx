@@ -1,4 +1,5 @@
-import Button from 'components/inputs/Button'
+import Button from 'components/_common/Button'
+import ExampleForm from 'components/_forms/ExampleForm'
 import { useAppDispatch } from 'hooks/useRedux'
 import { fetchMockData } from 'redux/slices/app'
 
@@ -10,8 +11,13 @@ const ViewHome = () => {
 
   return (
     <>
-      Click button to perform action (see Redux devTools)
-      <Button onClick={handleButtonClick}>Click me</Button>
+      <Button
+        mb={2}
+        onClick={handleButtonClick}
+      >
+        Click me
+      </Button>
+      <ExampleForm />
     </>
   )
 }

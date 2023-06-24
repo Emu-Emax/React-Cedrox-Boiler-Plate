@@ -1,1 +1,5 @@
 /* add font-faces here */
+@font-face {
+    font-family: "DinProMedium";
+    src: url('assets/fonts/DINPro-Medium.woff') format('woff');
+}

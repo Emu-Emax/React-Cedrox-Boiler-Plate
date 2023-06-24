@@ -31,6 +31,12 @@ module.exports = {
         'plugin:prettier/recommended',
       ],
       rules: {
+        'arrow-body-style': 'off',
+        'jsx-quotes': ['error', 'prefer-double'],
+        'react/jsx-curly-brace-presence': [
+          'error',
+          { props: 'never', children: 'ignore' },
+        ],
         // Floating promises in useEffects
         'no-void': 'off',
         // Too restrictive: https://eslint.org/docs/rules/no-prototype-builtins
