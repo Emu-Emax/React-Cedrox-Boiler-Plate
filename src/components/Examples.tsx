@@ -1,6 +1,7 @@
 import * as Core from 'components/_core/Core'
 import * as Typography from 'components/_core/Typography'
 import ExampleForm from 'components/_forms/ExampleForm'
+import LoaderWrapper from 'components/_wrappers/LoaderWrapper'
 import styled, { css } from 'styled-components'
 import { ICustomStyledProps } from 'types/customStyles'
 import { mediaQueries } from 'utils/breakpoints'
@@ -38,6 +39,7 @@ const Examples = () => {
       alignItems="center"
     >
       <Typography.H1 align="center">Examples</Typography.H1>
+
       <TitleExample>Responsive web design</TitleExample>
       <ExampleRWDBlock
         fullyCentered
@@ -45,6 +47,9 @@ const Examples = () => {
       >
         <p>RWD example block</p>
       </ExampleRWDBlock>
+
+      <TitleExample>Spinner HOC</TitleExample>
+      <LoaderWrapper isLoading={true}>Loaded</LoaderWrapper>
 
       <TitleExample>Form</TitleExample>
       <ExampleForm />

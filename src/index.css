@@ -1,5 +1,7 @@
 /* add font-faces here */
+
+/* Sketchy hand-written */
 @font-face {
-    font-family: "DinProMedium";
-    src: url('assets/fonts/DINPro-Medium.woff') format('woff');
+    font-family: "EduSABeginner";
+    src: url('assets/fonts/eduSABeginner.ttf') format('truetype');
 }

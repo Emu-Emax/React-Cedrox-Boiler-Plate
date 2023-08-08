@@ -27,13 +27,15 @@ Friendly, scalable structure
 * localStorage manager
 * Utils for strings
 * RWD - Responsive provider + Media queries
-
+* Loader component
 
 TODO:
 * Spies and mocks for testing
 * TS support for tests
-* loader component
 * global reject listener
+* Fade animations for sections in site
+* Progressbar scrolling website
+* Sticky navbar + hamburger
 
 ### `yarn start`
 

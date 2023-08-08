@@ -15,10 +15,10 @@ export const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     max-height: 100vh;
     width: 100%;
+    scroll-behavior: smooth;
   }
 
-  // TODO: this disables TS prompt during development
-  // NOTE:
+  // NOTE: this disables TS prompt during development
   iframe
     {
       display: none;
@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     margin: 0;
     padding: 0;
-    font-family: Roboto, BlinkMacSystemFont, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-family: 'EduSABeginner', Roboto, sans-serif;
     transition: all 0.5s linear;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
