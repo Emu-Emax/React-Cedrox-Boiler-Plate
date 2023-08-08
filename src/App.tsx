@@ -1,3 +1,4 @@
+import ResponsiveProvider from 'components/_wrappers/ResponsiveProvider'
 import React, { ReactNode } from 'react'
 import { Provider } from 'react-redux'
 import { ThemeProvider } from 'styled-components'
@@ -20,7 +21,9 @@ const App = () => (
   <Provider store={store}>
     <ThemedApp>
       <GlobalStyles />
-      <RouterApp />
+      <ResponsiveProvider>
+        <RouterApp />
+      </ResponsiveProvider>
     </ThemedApp>
   </Provider>
 )

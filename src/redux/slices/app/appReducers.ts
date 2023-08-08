@@ -14,6 +14,9 @@ export const reducers = {
     state.theme = action.payload
     setItemForLocalStorage(LOCAL_STORAGE_THEME, action.payload)
   },
+  setResolution: (state: IAppState, action: PayloadAction<number>) => {
+    state.resolution = action.payload
+  },
 }
 
 export const extraReducers = (builder: ActionReducerMapBuilder<IAppState>) => {

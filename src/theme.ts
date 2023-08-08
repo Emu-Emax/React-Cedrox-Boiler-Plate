@@ -1,7 +1,7 @@
 const COLORS_PALETTE = {
   black: '#000000',
   white: '#FFFFFF',
-  yellow: 'yellow',
+  golden: '#fcb91b',
   darkJeans: '#2A4686',
   crimsonRed: '#cd2121',
   grayIntrovert: '#9b9b9b',
@@ -20,13 +20,19 @@ export const commonTheme = {
 export const lightTheme = {
   ...commonTheme,
   colors: {
+    background: COLORS_PALETTE.white,
+    text: COLORS_PALETTE.black,
+    textSecondary: COLORS_PALETTE.grayTransparent,
+    section: COLORS_PALETTE.grayTransparent,
+
     primary: COLORS_PALETTE.darkJeans,
-    secondary: COLORS_PALETTE.white,
+    secondary: COLORS_PALETTE.golden,
+    tertiary: COLORS_PALETTE.crimsonRed,
+
+    white: COLORS_PALETTE.white,
+    black: COLORS_PALETTE.black,
     modalBackground: COLORS_PALETTE.white,
     modalOverlay: COLORS_PALETTE.blackyGray,
-    text: COLORS_PALETTE.darkJeans,
-    textSecondary: COLORS_PALETTE.grayTransparent,
-    background: COLORS_PALETTE.white,
     gradient: 'linear-gradient(#39598A, #79D7ED)',
     buttonBorder: '#FFF',
     border: COLORS_PALETTE.grayTransparent,

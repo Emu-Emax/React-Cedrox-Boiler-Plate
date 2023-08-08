@@ -1,7 +1,7 @@
 import {
   commonStylesFromProps,
   commonTypographyStyles,
-} from 'components/_core/commonStyles'
+} from 'components/_core/coreStyles'
 import * as React from 'react'
 import styled, { css } from 'styled-components'
 import { ICustomStyledProps } from 'types/customStyles'

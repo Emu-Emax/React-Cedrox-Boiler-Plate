@@ -39,9 +39,11 @@ export const spacingProps = (p: ISpacingProps) => css`
 export const commonStylesFromProps = (p: ICustomStyledProps) => css`
   ${spacingProps};
 
+  // sizes
   ${p.w && `width: ${p.w}`};
   ${p.h && `height: ${p.h}`};
 
+  // flex
   ${p.flex && `display: flex; flex-direction: ${p.flex};`};
   ${p.flexSpan && `flex: ${p.flexSpan};`};
   ${p.fullyCentered &&
@@ -49,6 +51,9 @@ export const commonStylesFromProps = (p: ICustomStyledProps) => css`
   ${p.justifyContent && `justify-content: ${p.justifyContent};`};
   ${p.flexDirection && `flex-direction: ${p.flexDirection};`};
   ${p.alignItems && `align-items: ${p.alignItems};`};
+  ${p.gap && `gap: ${p.gap * SPACING_PX}px`};
+
+  // other
   ${p.position && `position: ${p.position};`};
   ${p.onClick && 'cursor: pointer'};
 `

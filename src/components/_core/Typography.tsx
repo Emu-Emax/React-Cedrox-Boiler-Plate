@@ -1,7 +1,7 @@
 import {
   commonTypographyStyles,
   spacingProps,
-} from 'components/_core/commonStyles'
+} from 'components/_core/coreStyles'
 import styled, { css } from 'styled-components'
 import { ITypographyProps } from 'types/customStyles'
 
@@ -18,7 +18,7 @@ export const H2 = styled.h2<ITypographyProps>(
   () => css`
     ${commonTypographyStyles};
     ${spacingProps};
-    font-size: 40px;
+    font-size: 30px;
     line-height: 52px;
   `
 )

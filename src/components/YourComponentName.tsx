@@ -1,13 +1,11 @@
-import * as Common from 'components/_core/Core'
+import * as Core from 'components/_core/Core'
 import * as Typography from 'components/_core/Typography'
 import { useAppDispatch } from 'hooks/useRedux'
 import { ReactNode, useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import { ICustomStyledProps } from 'types/customStyles'
 
-const YourComponentContainer = styled(Common.Div)<
-  ICustomStyledProps & { variant?: 'primary' | 'secondary' }
->(
+const YourComponentContainer = styled(Core.Div)<ICustomStyledProps>(
   ({ theme: { colors } }) => css`
     // color: ${colors.primary}
   `

@@ -1,5 +1,5 @@
 // React
-import { commonStylesFromProps } from 'components/_core/commonStyles'
+import { commonStylesFromProps } from 'components/_core/coreStyles'
 import * as Core from 'components/_core/Core'
 import * as Typography from 'components/_core/Typography'
 import { Controller, FieldValues, Path, UseFormReturn } from 'react-hook-form'

@@ -1,6 +1,9 @@
 import { DefaultTheme } from 'styled-components'
 
 export interface ISpacingProps {
+  // mobile
+  isMobile?: boolean
+
   // paddings
   p?: number
   pb?: number
@@ -20,22 +23,24 @@ export interface ISpacingProps {
   my?: number
 }
 
+export interface ICustomStyledProps extends ISpacingProps {
+  w?: string
+  h?: string
+  position?: 'relative' | 'absolute'
+  onClick?: () => void
+  flex?: 'row' | 'column'
+  flexDirection?: 'row-reverse' | 'column-reverse' | 'row'
+  flexSpan?: number
+  fullyCentered?: boolean
+  justifyContent?: 'center' | 'space-between' | 'end'
+  alignItems?: 'center' | 'end'
+  gap?: number
+}
+
 export interface ITypographyProps extends ISpacingProps {
   secondary?: boolean
   bold?: boolean
   onClick?: () => void
   theme: DefaultTheme
-}
-
-export interface ICustomStyledProps extends ISpacingProps {
-  flex?: 'row' | 'column'
-  flexDirection?: 'row-reverse'
-  flexSpan?: number
-  fullyCentered?: boolean
-  justifyContent?: 'center' | 'space-between' | 'end'
-  alignItems?: 'center' | 'end'
-  w?: string
-  h?: string
-  position?: 'relative' | 'absolute'
-  onClick?: () => void
+  align?: 'center' | 'left' | 'right'
 }

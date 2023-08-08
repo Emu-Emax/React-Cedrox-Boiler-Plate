@@ -1,4 +1,4 @@
-import { commonStylesFromProps } from 'components/_core/commonStyles'
+import { commonStylesFromProps } from 'components/_core/coreStyles'
 import { ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 import { ICustomStyledProps } from 'types/customStyles'
